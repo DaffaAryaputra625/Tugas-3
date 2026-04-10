@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas jQuery Lengkap</title>
+
+    <!-- CDN jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            // Menampilkan
+            $("#btnHello").click(function() {
+                $("#output").html("2311102272_Daffa Aryaputra");
+            });
+
+            // Hide Show
+            $("#hide").click(function() {
+                $("#paragraf").hide();
+            });
+
+            $("#show").click(function() {
+                $("#paragraf").show();
+            });
+
+            // Animasi
+            $("#animateBtn").click(function() {
+                $("#box").animate({
+                    height: 'toggle'
+                });
+            });
+
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        #box {
+            background: #bf2121;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>1. 2311102272_Daffa Aryaputra</h2>
+    <button id="btnHello">Tampilkan 2311102272_Daffa Aryaputra</button>
+    <p id="output"></p>
+
+    <hr>
+
+    <h2>2. Hide / Show</h2>
+    <p id="paragraf">Ini adalah paragraf yang bisa disembunyikan.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <hr>
+
+    <h2>3. Animasi</h2>
+    <button id="animateBtn">Start Animation</button>
+    <div id="box"></div>
+
+</body>
+</html>
